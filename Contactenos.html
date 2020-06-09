@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/contactenos.css">
+    <script src="js/validar.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <p class="sub-titulo"> </p>
+        </div>
+
+        <nav class="menu">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="Preparación.html">preparación</a></li>
+                <li><a href="Domicilios.html">Domicilios</a></li>
+                <li><a href="Contactenos.html">Contactenos</a></li>
+            </ul>
+        </nav>
+    </header> <br><br><br><br><br>
+    <form action="enviar"method="post" class="form-enviar" onsubmit="return validar();">
+     <h2>Contáctenos</h2>
+     <input type="text"id="Nombre" name="Nombre" placeholder="Nombre" maxlength="30" required>
+     <input type="text"id="Correo" name="Correo" placeholder="Correo-opcional" maxlength="50" required>
+     <input type="number"id="Telefono" name="Telefono" placeholder="Telefono" maxlength="15" required >
+     <input type="submit"  value="enviar" id="boton" onclick="alert('Gracias por contactarnos  pronto nos comunicaremos' )" >
+     <script src="js/main.js"></script>
+     <script src="validar.js "></script>
+    </form>
+</body>
+</html>
